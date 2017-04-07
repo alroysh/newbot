@@ -216,7 +216,7 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => 'Hasilnya '. '$a'+'$b'
+					   'text' => 'Hasilnya '. '$a+$b'
 										)
 								)
 							);
