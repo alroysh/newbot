@@ -38,8 +38,8 @@
 
 
 
-	$a = 5;
-	$b = 20;
+	$a = $pesan_datang;
+	$b = $pesan_datang;
 	$hasil = $a+$b;
 	//pesan bergambar
 if($message['type']=='text')
