@@ -36,30 +36,28 @@
 	{
 		if($pesan_datang=='Halo')
 		{
-			
-			
 			$balas = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-									array(
-											'type' => 'text',					
-											'text' => 'Halo ' .$profil->displayName.''
+			'replyToken' => $replyToken,														
+			'messages' => array(
+				      array(
+					     'type' => 'text',					
+					     'text' => 'Halo ' .$profil->displayName.''
 										)
 								)
 							);
 					
 		}
 		else
-				if($pesan_datang=='link fotoku')
+			if($pesan_datang=='link fotoku')
 		{
 			
 			
 			$balas = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-									array(
-											'type' => 'text',					
-											'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
+				'replyToken' => $replyToken,														
+				'messages' => array(
+					      array(
+						'type' => 'text',					
+						'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
 										)
 								)
 							);
@@ -68,14 +66,12 @@
 		else
 				if($pesan_datang=='status')
 		{
-			
-			
 			$balas = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-									array(
-											'type' => 'text',					
-											'text' => 'Status Message Kamu : ' .$profil->statusMessage.''
+				'replyToken' => $replyToken,														
+				'messages' => array(
+				              array(
+					             'type' => 'text',					
+						     'text' => 'Status Message Kamu : ' .$profil->statusMessage.''
 										)
 								)
 							);
