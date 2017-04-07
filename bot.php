@@ -162,6 +162,21 @@ if($message['type']=='text')
 					
 		}
 		else
+		if($pesan_datang=='/tan')
+		{
+			
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+			              array(
+					  'type' => 'text',					
+					   'text' => 'Now '. date('H.i.s')
+										)
+								)
+							);
+					
+		}
+		else
 		if($pesan_datang=='/jam')
 		{
 			
