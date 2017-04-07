@@ -23,44 +23,43 @@
 	}
 	*/
 	$userId 	= $client->parseEvents()[0]['source']['userId'];
-	$replyToken     = $client->parseEvents()[0]['replyToken'];
+	$replyToken = $client->parseEvents()[0]['replyToken'];
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
 	$message 	= $client->parseEvents()[0]['message'];
-	$groupId        = $client->parseEvents()[0]['groupId'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
-	$profil         = $client->profil($userId);
-	$grup           = $client->groupId($groupId);
-	$pesan_datang   = $message['text'];
+	$profil = $client->profil($userId);
+	$pesan_datang = $message['text'];
 	$wita= date_default_timezone_set['Asia/Singapore'];
 	$jam = date("H.i.s ");
-	$tanggal = date("l, d-m-Y");
 	//pesan bergambar
 	if($message['type']=='text')
 	{
 		if($pesan_datang=='Halo')
 		{
+			
+			
 			$balas = array(
-			'replyToken' => $replyToken,														
-			'messages' => array(
-				      array(
-					     'type' => 'text',					
-					     'text' => 'Halo ' .$profil->displayName.''
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => 'Halo ' .$profil->displayName.''
 										)
 								)
 							);
 					
 		}
 		else
-			if($pesan_datang=='link fotoku')
+				if($pesan_datang=='link fotoku')
 		{
 			
 			
 			$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
-					      array(
-						'type' => 'text',					
-						'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
 										)
 								)
 							);
@@ -69,12 +68,14 @@
 		else
 				if($pesan_datang=='status')
 		{
+			
+			
 			$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
-				              array(
-					             'type' => 'text',					
-						     'text' => 'Status Message Kamu : ' .$profil->statusMessage.''
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => 'Status Message Kamu : ' .$profil->statusMessage.''
 										)
 								)
 							);
@@ -139,22 +140,7 @@
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Fungsi PHP base64_encode velicious :'. base64_encode("velicious")
-										)
-								)
-							);
-					
-		}
-		else
-		if($pesan_datang=='/tanggal')
-		{
-			
-			$balas = array(
-			'replyToken' => $replyToken,														
-			'messages' => array(
-			              array(
-					  'type' => 'text',					
-					   'text' => 'Now '. date('l, d-m-Y')
+											'text' => 'Fungsi PHP base64_encode medantechno.com :'. base64_encode("medantechno.com")
 										)
 								)
 							);
@@ -165,11 +151,11 @@
 		{
 			
 			$balas = array(
-			'replyToken' => $replyToken,														
-					'messages' => array(
-					array(
-						'type' => 'text',					
-						'text' => 'Wita : '. date('H.i.s')
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => 'Wita : '. date('H.i.s')
 										)
 								)
 							);
