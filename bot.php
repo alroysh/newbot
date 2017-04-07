@@ -152,7 +152,7 @@
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => 'Now '. date('l ,d-m-Y')
+					   'text' => 'Tanggal '. date('d-m-Y')
 										)
 								)
 							);
@@ -163,11 +163,11 @@
 		{
 			
 			$balas = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-									array(
-											'type' => 'text',					
-											'text' => 'Wita : '. date('H.i.s')
+			'replyToken' => $replyToken,														
+					'messages' => array(
+					array(
+						'type' => 'text',					
+						'text' => 'Wita : '. date('H.i.s')
 										)
 								)
 							);
