@@ -75,7 +75,7 @@
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Wib : . date('H.i.s', time()+60*60*7)  '
+											'text' => 'Wib : . date('H.i.s')  '
 									)
 								)
 							);
