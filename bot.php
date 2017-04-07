@@ -141,18 +141,18 @@ if($message['type']=='text')
 			$get_sub = array();
 			$aa =   array(
 							'type' => 'text',									
-							'text' => 'Wib :'
+							'text' => 'Wib : . $wib'
 							
 						);
 			array_push($get_sub,$aa);	
 			$get_sub[] = array(
 							'type' => 'text',									
-							'text' => 'Wita :'
+							'text' => 'Wita : . $wita'
 									);
 			array_push($get_sub);
 			$get_sub[] = array(
 							'type' => 'text',									
-							'text' => 'Wit:'
+							'text' => 'Wit: . $wit'
 									);
 			$balas = array(
 						'replyToken' 	=> $replyToken,														
