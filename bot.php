@@ -152,7 +152,7 @@
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => 'Tanggal '. date('l, d-m-Y')
+					   'text' => 'Now '. date('l, d-m-Y')
 										)
 								)
 							);
