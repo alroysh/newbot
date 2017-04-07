@@ -1,31 +1,23 @@
 <?php
 
-/**
- * Copyright 2016 LINE Corporation
- *
- * LINE Corporation licenses this file to you under the Apache License,
- * version 2.0 (the "License"); you may not use this file except in compliance
- * with the License. You may obtain a copy of the License at:
- *
- *   https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations
- * under the License.
- */
-
 require_once('./LINEBotTiny.php');
 
 $channelAccessToken = 'bxcs67UsXL4dg6qSR4Nojg1djzE2QaP3RvedqZ2nY/2b+U6ypsmuoDr4j74SqKBQS2S8nFXRiOyfieRMLU2CEcqz570pODeTjUk8H4Y+AyhcO5qiEEj95HWSwIk23KR1AEIQjnUOw/JG+vdvTeVn1AdB04t89/1O/w1cDnyilFU=';
 $channelSecret = '2ad35467614230c7a6dfe8e158e95988';
 
-$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient('<channel access token>');
-$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => '<channel secret>']);
-
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hailo');
-$response = $bot->replyMessage('<replyToken>', $textMessageBuilder);
-
-echo $response->getHTTPStatus() . 'HEllo' . $response->getRawBody();
-echo "OK";
+curl -X POST \
+-H 'Content-Type:application/json' \
+-H 'Authorization: Bearer {ENTER_ACCESS_TOKEN}' \
+-d '{
+    "replyToken":"nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+    "messages":[
+        {
+            "type":"text",
+            "text":"Hello, user"
+        },
+        {
+            "type":"text",
+            "text":"May I help you?"
+        }
+    ]
+}' https://api.line.me/v2/bot/message/reply
