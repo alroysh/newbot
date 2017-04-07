@@ -6,14 +6,18 @@ $channelAccessToken = 'bxcs67UsXL4dg6qSR4Nojg1djzE2QaP3RvedqZ2nY/2b+U6ypsmuoDr4j
 $channelSecret = '2ad35467614230c7a6dfe8e158e95988';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
-    	$userId 	= $client->parseEvents()[0]['source']['userId'];
+
+
+	$userId 	= $client->parseEvents()[0]['source']['userId'];
 	$replyToken = $client->parseEvents()[0]['replyToken'];
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
 	$message 	= $client->parseEvents()[0]['message'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
 	$profil = $client->profil($userId);
-	$pesan = $message['text'];
-
+	$pesan_datang = $message['text'];
+	$wita= date_default_timezone_set['Asia/Singapore'];
+	$jam = date("H.i.s ");
+	//pesan bergambar
 	if($message['type']=='text')
 	{
 		if($pesan_datang=='Halo')
@@ -203,3 +207,9 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $response = $bot->leaveRoom('<groupId>');
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();		
 	}
+	 
+	$result =  json_encode($balas);
+	//$result = ob_get_clean();
+	file_put_contents('./balasan.json',$result);
+	$client->replyMessage($balas);
+
