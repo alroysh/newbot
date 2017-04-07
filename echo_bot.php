@@ -26,8 +26,8 @@ foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'message':
             $message = $event['Message'];
-            switch ($message['jancuk']) {
-                case 'text':
+            switch ($message['type']) {
+                case 'wh':
                     $client->replyMessage(array(
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
