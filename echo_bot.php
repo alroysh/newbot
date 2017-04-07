@@ -24,7 +24,7 @@ $channelSecret = '2ad35467614230c7a6dfe8e158e95988';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient('<channel access token>');
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => '<channel secret>']);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hailo');
 $response = $bot->replyMessage('<replyToken>', $textMessageBuilder);
 
 echo $response->getHTTPStatus() . 'HEllo' . $response->getRawBody();
