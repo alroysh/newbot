@@ -91,7 +91,7 @@
 								'messages' => array(
 									array(
 											'type' => 'sticker',					
-											'packageId'=> '1',
+											'packageId'=> '1350263',
 											'stickerId'=> '2'
 										)
 								)
