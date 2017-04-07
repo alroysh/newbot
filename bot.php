@@ -194,20 +194,6 @@
 					
 		}
 		else
-				if($pesan_datang=='statusku')
-		{
-			$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
-				              array(
-					             'type' => 'text',					
-						     'text' => 'Status Message Kamu : ' .$groupId->statusMessage.''
-										)
-								)
-							);
-					
-		}
-		else
 		if($pesan_datang=='7')
 		{
 			
