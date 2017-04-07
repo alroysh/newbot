@@ -170,7 +170,7 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => 'Now '. date('H.i.s',$wib)
+					   'text' => 'Now '. date($wib,'H.i.s')
 										)
 								)
 							);
