@@ -34,7 +34,7 @@
 	//pesan bergambar
 	if($message['type']=='text')
 	{
-		if($pesan_datang=='Halo')
+		if($pesan_datang=='Bot')
 		{
 			$balas = array(
 				'replyToken' => $replyToken,														
@@ -49,4 +49,4 @@
 		}
 		
 	}
-	 
+echo "OK"	 
