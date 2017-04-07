@@ -153,6 +153,7 @@ if($message['type']=='text')
 			$get_sub[] = array(
 							'type' => 'text',									
 							'text' => 'Wit:'
+									);
 			$balas = array(
 						'replyToken' 	=> $replyToken,														
 						'messages' 		=> $get_sub
