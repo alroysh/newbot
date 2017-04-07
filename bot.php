@@ -136,12 +136,12 @@ if($message['type']=='text')
 			//$client->replyMessage($alt);
 		}
 	else
-		if($pesan_datang=='/test')
+		if($pesan_datang=='/jam')
 		{
 			$get_sub = array();
 			$aa =   array(
 							'type' => 'text',									
-							'text' => 'Wib : '. $wib
+							'text' => 'Wib  : '. $wib
 							
 						);
 			array_push($get_sub,$aa);	
@@ -152,7 +152,7 @@ if($message['type']=='text')
 			array_push($get_sub);
 			$get_sub[] = array(
 							'type' => 'text',									
-							'text' => 'Wit: '. $wit
+							'text' => 'Wit  : '. $wit
 									);
 			$balas = array(
 						'replyToken' 	=> $replyToken,														
@@ -201,36 +201,7 @@ if($message['type']=='text')
 							);
 					
 		}
-		else
-		if($pesan_datang=='/tan')
-		{
-			
-			$balas = array(
-			'replyToken' => $replyToken,														
-			'messages' => array(
-			              array(
-					  'type' => 'text',					
-					   'text' => 'Now ' . $wib
-										)
-								)
-							);
-					
-		}
-		else
-		if($pesan_datang=='/jam')
-		{
-			
-			$balas = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-									array(
-											'type' => 'text',					
-											'text' => 'Wita : '. $wita
-										)
-								)
-							);
-					
-		}
+		
 		else
 		if($pesan_datang=='Lokasi Bot')
 		{
