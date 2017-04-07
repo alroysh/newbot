@@ -13,7 +13,7 @@ curl -X POST \
     "messages":[
         {
             "type":"text",
-            "text":"Hello, user"
+            "text":"user"
         },
         {
             "type":"text",
