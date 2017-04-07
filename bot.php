@@ -149,7 +149,7 @@ if($message['type']=='text')
 							'type' => 'text',									
 							'text' => 'Wita :'
 									);
-			array_push($get_sub,$aa);
+			array_push($get_sub);
 			$get_sub[] = array(
 							'type' => 'text',									
 							'text' => 'Wit:'
