@@ -137,7 +137,7 @@
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Fungsi PHP base64_encode medantechno.com :'. base64_encode("medantechno.com")
+											'text' => 'Fungsi PHP base64_encode velicious :'. base64_encode("velicious")
 										)
 								)
 							);
