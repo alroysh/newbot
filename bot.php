@@ -259,7 +259,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Pesan ini dari medantechno.com'
+											'text' => 'Pesan ini dari velicious'
 										)
 								)
 							);
