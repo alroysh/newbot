@@ -31,7 +31,7 @@
 	$pesan_datang   = $message['text'];
 	$wita= date_default_timezone_set['Asia/Singapore'];
 	$jam = date("H.i.s ");
-	$tanggal = date("l, d-m-Y")
+	$tanggal = date("l, d-m-Y");
 	//pesan bergambar
 	if($message['type']=='text')
 	{
