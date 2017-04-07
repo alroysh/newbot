@@ -22,7 +22,7 @@
 	  }
 	}
 	*/
-	$userId 	= $client->parseEvents()[0]['source']['userId'];
+		$userId 	= $client->parseEvents()[0]['source']['userId'];
 	$replyToken = $client->parseEvents()[0]['replyToken'];
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
 	$message 	= $client->parseEvents()[0]['message'];
@@ -31,21 +31,31 @@
 	$pesan_datang = $message['text'];
 	$wita= date_default_timezone_set['Asia/Singapore'];
 	$jam = date("H.i.s ");
-	//pesan bergambar
+
 	if($message['type']=='text')
 	{
-		if($pesan_datang=='Bot')
+		if($pesan_datang=='Halo')
 		{
+			
+			
 			$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
-					      array(
-						'type' => 'text',					
-						'text' => 'Halo ' .$profil->displayName.''
-						)
-					)
-				);
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => 'Halo ' .$profil->displayName.''
+										)
+								)
+							);
 					
 		}
-	    }
+		
+		
+		
 
+	
+		
+		
+
+	}	
+	}
