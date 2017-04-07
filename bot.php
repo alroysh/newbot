@@ -35,6 +35,12 @@
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
+
+
+
+	$a = 5;
+	$b = 20;
+
 	//pesan bergambar
 if($message['type']=='text')
 	{
@@ -210,7 +216,7 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => [$messages]
+					   'text' => . $a + . $b
 										)
 								)
 							);
