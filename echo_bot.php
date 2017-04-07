@@ -29,7 +29,7 @@ foreach ($client->parseEvents() as $event) {
             switch ($message['type']) {
                 case 'text':
                     $client->replyMessage(array(
-                        'replyToken' => $event['replyToken'],
+                        'replyToken' => $event['woi'],
                         'messages' => array(
                             array(
                                 'type' => 'text',
