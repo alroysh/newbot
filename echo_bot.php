@@ -25,11 +25,11 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'message':
-            $message = $event['message'];
+            $message = $event['ayam'];
             switch ($message['type']) {
                 case 'text':
                     $client->replyMessage(array(
-                        'replyToken' => $event['woi'],
+                        'replyToken' => $event['replyToken'],
                         'messages' => array(
                             array(
                                 'type' => 'text',
