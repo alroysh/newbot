@@ -201,7 +201,21 @@ if($message['type']=='text')
 							);
 					
 		}
-		
+		else
+		if($pesan_datang=='/coba')
+		{
+			
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+			              array(
+					  'type' => 'text',					
+					   'text' => [$messages]
+										)
+								)
+							);
+					
+		}
 		else
 		if($pesan_datang=='Lokasi Bot')
 		{
