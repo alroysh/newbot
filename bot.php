@@ -26,6 +26,7 @@
 	$replyToken     = $client->parseEvents()[0]['replyToken'];
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
 	$message 	= $client->parseEvents()[0]['message'];
+	$groupId        = $client->parseEvents()[0]['groupId'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
 	$profil         = $client->profil($userId);
 	$pesan_datang   = $message['text'];
