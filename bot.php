@@ -40,7 +40,7 @@
 
 	$a = 5;
 	$b = 20;
-
+	$hasil = $a+$b;
 	//pesan bergambar
 if($message['type']=='text')
 	{
@@ -216,7 +216,7 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => 'Hasilnya '.$a.$b
+					   'text' => 'Hasilnya '.$hasil
 										)
 								)
 							);
