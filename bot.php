@@ -147,6 +147,21 @@
 					
 		}
 		else
+		if($pesan_datang=='/tanggal')
+		{
+			
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+			              array(
+					  'type' => 'text',					
+					   'text' => 'Now '. date('l, d-m-Y')
+										)
+								)
+							);
+					
+		}
+		else
 		if($pesan_datang=='/jam')
 		{
 			
