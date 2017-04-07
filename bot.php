@@ -32,7 +32,7 @@
 	$wita= date_default_timezone_set['Asia/Singapore'];
 	$jam = date("H.i.s");
 	//pesan bergambar
-	if($message['type']=='text')
+if($message['type']=='text')
 	{
 		if($pesan_datang=='Halo')
 		{
@@ -66,22 +66,6 @@
 					
 		}
 		else
-				if($pesan_datang=='unicode')
-		{
-			
-			
-			$balas = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-									array(
-											'type' => 'text',					
-											'text' => 'Wib : . date('H.i.s')  '
-									)
-								)
-							);
-					
-		}
-		else
 				if($pesan_datang=='status')
 		{
 			
@@ -107,8 +91,8 @@
 								'messages' => array(
 									array(
 											'type' => 'sticker',					
-											'packageId'=> '2',
-											'stickerId'=> '5'
+											'packageId'=> '1',
+											'stickerId'=> '2'
 										)
 								)
 							);
@@ -162,7 +146,7 @@
 							);
 					
 		}
-		else
+	else
 		if($pesan_datang=='/tanggal')
 		{
 			
