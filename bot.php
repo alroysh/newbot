@@ -1,4 +1,6 @@
 <?php
+	date_default_timezone_set('Asia/Singapore');
+	$wita=.date('H.i.s');
 	require_once('./line_class.php');
 	$channelAccessToken = 'bxcs67UsXL4dg6qSR4Nojg1djzE2QaP3RvedqZ2nY/2b+U6ypsmuoDr4j74SqKBQS2S8nFXRiOyfieRMLU2CEcqz570pODeTjUk8H4Y+AyhcO5qiEEj95HWSwIk23KR1AEIQjnUOw/JG+vdvTeVn1AdB04t89/1O/w1cDnyilFU=';
 	$channelSecret = '2ad35467614230c7a6dfe8e158e95988';
@@ -28,8 +30,6 @@
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
-	$wita = date_default_timezone_set('Asia/Singapore');
-	$wib= date_default_timezone_set("Asia/Jakarta");
 	$jam = date("H.i.s");
 	//pesan bergambar
 if($message['type']=='text')
@@ -170,7 +170,7 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => 'Now '. date('H.i.s') . $wib
+					   'text' => 'Now '. date('H.i.s')
 										)
 								)
 							);
@@ -185,7 +185,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Wita : '. date('H.i.s',$wita)
+											'text' => 'Wita : '. date('H.i.s')
 										)
 								)
 							);
