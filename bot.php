@@ -187,7 +187,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Wita : '. date('H.i.s')
+											'text' => 'Wita : '. $wita
 										)
 								)
 							);
