@@ -135,6 +135,38 @@ if($message['type']=='text')
 			*/
 			//$client->replyMessage($alt);
 		}
+	else
+		if($pesan_datang=='/test')
+		{
+			$get_sub = array();
+			$aa =   array(
+							'type' => 'text',									
+							'text' => 'Wita :'
+							
+						);
+			array_push($get_sub,$aa);	
+			$get_sub[] = array(
+										'type' => 'text',									
+										'text' => 'Wib :'
+									);
+			
+			$balas = array(
+						'replyToken' 	=> $replyToken,														
+						'messages' 		=> $get_sub
+					 );	
+			/*
+			$alt = array(
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => '[*] '.join(str(f) for f in dataResult).'
+										)
+								)
+							);
+			*/
+			//$client->replyMessage($alt);
+		}
 		else
 		if($pesan_datang=='3')
 		{
@@ -189,8 +221,6 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Wita : '. $wita
-											'text' => 'Wita : '. $wita
 											'text' => 'Wita : '. $wita
 										)
 								)
