@@ -29,7 +29,7 @@
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
-	$wita= date_default_timezone_set['Asia/Singapore'];
+	$wib= date_default_timezone_set("Asia/Jakarta");
 	$jam = date("H.i.s");
 	//pesan bergambar
 if($message['type']=='text')
@@ -170,7 +170,7 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					  'type' => 'text',					
-					   'text' => 'Now '. gmdate('H.i.s,time()+60*60*7')
+					   'text' => 'Now '. gmdate('H.i.s'$wib)
 										)
 								)
 							);
