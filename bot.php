@@ -35,7 +35,6 @@
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
-	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 
 
 	$a = 100;
@@ -83,7 +82,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => .$hostname
+					'text' => 'hai'
 										)
 								)
 							);
