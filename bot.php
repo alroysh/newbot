@@ -36,7 +36,7 @@
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
 	$ip = $_SERVER['REMOTE_ADDR'];
-	$browser=$_SERVER['HTTP_USER_AGENT'];
+	$browser= $_SERVER['HTTP_USER_AGENT'];
 	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 	
 	$a = 100;
@@ -84,7 +84,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : ' . $ip. ' Browser : ' .$browser. ' Hostname : ' . $hostname.
+					'text' => 'IP : ' . $ip. ' Browser : ' .$browser. 
 										)
 								)
 							);
