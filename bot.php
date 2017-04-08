@@ -76,7 +76,7 @@ if($message['type']=='text')
 					
 		}
 	else
-	if($pesan_datang=='/myinfo')
+	if($pesan_datang=='/info')
 		{
 			$balas = array(
 			'replyToken' => $replyToken,														
