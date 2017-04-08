@@ -116,15 +116,15 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'sticker',					
-											'packageId'=> '10',
-											'stickerId'=> '1'
+											'packageId'=> '1',
+											'stickerId'=> '5'
 										)
 								)
 							);
 					
 		}
 		else
-		if($pesan_datang=='2')
+		if($pesan_datang=='ggwp')
 		{
 			$get_sub = array();
 			$aa =   array(
@@ -270,7 +270,7 @@ if($message['type']=='text')
 					
 		}
 		else
-		if($pesan_datang=='7')
+		if($pesan_datang=='13626')
 		{
 			
 			$balas = array(
