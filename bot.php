@@ -82,7 +82,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'hai'
+					'text' => 'hai' . $hostname
 										)
 								)
 							);
