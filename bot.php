@@ -35,7 +35,7 @@
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
-	$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	$ip = $_SERVER['REMOTE_ADDR'];
 
 	$a = 100;
 	$b = 230;
@@ -75,7 +75,7 @@ if($message['type']=='text')
 					
 		}
 	else
-	if($pesan_datang=='/myip')
+	if($pesan_datang=='/myip/')
 		{
 			$balas = array(
 			'replyToken' => $replyToken,														
