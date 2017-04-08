@@ -33,6 +33,7 @@
 	$message 	= $client->parseEvents()[0]['message'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
 	$profil = $client->profil($userId);
+	$leave =  $client->leaveGroup($groupId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
 	$ip = $_SERVER['REMOTE_ADDR'];
@@ -55,7 +56,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Halo ' .$profil->displayName.''
+											'text' => 'Halo ' .$leave->displayName.''
 										)
 								)
 							);
