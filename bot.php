@@ -84,7 +84,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : ' . $ip. ', Browser : ' . $browser .', Hostname : '. $hostname
+					'text' => 'IP : <br>' . $ip. ', Browser : ' . $browser .', Hostname : '. $hostname
 										)
 								)
 							);
