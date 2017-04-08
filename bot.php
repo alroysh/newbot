@@ -54,7 +54,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Halo ' .$profil->displayName.''
+											'text' => 'Halo '\n\n .$profil->displayName.''
 										)
 								)
 							);
@@ -84,7 +84,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : '\n\n . $ip. ', Browser : ' . $browser .', Hostname : '. $hostname
+					'text' => 'IP : ' . $ip. ', Browser : ' . $browser .', Hostname : '. $hostname
 										)
 								)
 							);
