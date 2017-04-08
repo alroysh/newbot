@@ -240,7 +240,7 @@ if($message['type']=='text')
 						'actions' => [
 						[
 						'type' => 'uri',
-						    'label' => 'View Details',
+						    'label' => $wita,
 						    'uri' => 'http://lk21.org'
 						]
 						]
