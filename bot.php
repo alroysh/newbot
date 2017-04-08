@@ -84,7 +84,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : <br>' . $ip. ', Browser : ' . $browser .', Hostname : '. $hostname
+					'text' => 'IP : <?php <br> 	?>' . $ip. ',Browser : ' . $browser .'Hostname'. $hostname
 										)
 								)
 							);
@@ -302,3 +302,4 @@ echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 	//$result = ob_get_clean();
 	file_put_contents('./balasan.json',$result);
 	$client->replyMessage($balas);
+		
