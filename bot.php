@@ -54,7 +54,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Halo '\n\n .$profil->displayName.''
+											'text' => 'Halo ' .$profil->displayName.''
 										)
 								)
 							);
