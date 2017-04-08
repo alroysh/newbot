@@ -46,7 +46,7 @@
 	//pesan bergambar
 if($message['type']=='text')
 	{
-		if($pesan_datang=='Halo')
+		if($pesan_datang=='Halo'.'alo')
 		{
 			
 			
