@@ -239,16 +239,6 @@ if($message['type']=='text')
 						'text' => 'Tempat Download Film',
 						'actions' => [
 						[
-						    'type' => 'postback',
-						    'label' => 'Buy',
-						    'data' => 'action=buy&itemid=123'
-						],
-						[
-						'type' => 'postback',
-						    'label' => 'Add to Cart',
-						    'data' => 'action=add&itemid=123'    
-						],
-						[
 						'type' => 'uri',
 						    'label' => 'View Details',
 						    'uri' => 'http://lk21.org'
