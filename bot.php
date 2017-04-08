@@ -232,30 +232,6 @@ if($message['type']=='text')
 			              array(
 					  'type' => 'template',	
 					   'altText' => 'Coba aja',
-					    'template' => {
-					    'type' => 'buttons',
-					    'thumbnailImageUrl' => 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV5PXjMc2nWqx_msHLzlBmfvA5q1CEQHAzvx5gn7j5qB1PmDhm',
-					    'title' => 'menu',
-					    'text' => 'Hasilnya',
-					    'actions' => [
-						    {
-						    'type' => 'postback',
-						    'label' => 'Buy',
-						    'data' => 'action=buy&itemid=123'
-						    },
-						    {
-						    'type' => 'postback',
-						    'label' => 'Add to Cart',
-						    'data' => 'action=add&itemid=123'    
-						    },
-						    {
-						    'type' => 'uri',
-						    'label' => 'View Details',
-						    'uri' => 'http://example.com/page/123'
-						    }
-					    ]
-					    }
-					   
 										)
 								)
 							);
