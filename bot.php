@@ -38,6 +38,7 @@
 	$ip = $_SERVER['REMOTE_ADDR'];
 	$browser= $_SERVER['HTTP_USER_AGENT'];
 	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+	$os = preg_match('/android.+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge|maemo|meego.+mobile|midp|mmp|netfront|opera m(ob|in)i|palm(os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i',$hostname);
 	
 	$a = 100;
 	$b = 230;
@@ -84,7 +85,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : ' . $ip. ',Browser : ' . $browser .'Hostname'. $hostname
+					'text' => 'IP : ' . $ip. ',Browser : ' . $browser .'Hostname'. $hostname .$os
 										)
 								)
 							);
