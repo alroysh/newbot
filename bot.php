@@ -32,11 +32,10 @@
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
 	$message 	= $client->parseEvents()[0]['message'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
-	$displayName = $user['contacts'][0]['displayName'];
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
-
+	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 
 
 	$a = 100;
@@ -84,7 +83,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'You' . $profile->mid''
+					'text' => .$hostname
 										)
 								)
 							);
