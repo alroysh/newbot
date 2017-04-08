@@ -222,7 +222,7 @@ if($message['type']=='text')
 							);
 					
 		}
-		else
+			else
 		if($pesan_datang=='/coba')
 		{
 			
@@ -230,10 +230,32 @@ if($message['type']=='text')
 			'replyToken' => $replyToken,														
 			'messages' => array(
 			              array(
+						  'type' => 'template',	
+					   'altText' => 'Coba aja',
+					   'template' =>[
 					  'type' => 'buttons',	
 					   'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						'title' => 'Menu',
-						'text' => 'Please Select'
+						'text' => 'Please Select',
+						'actions' => [
+						[
+							'type' => 'postback',
+						    'label' => 'Buy',
+						    'data' => 'action=buy&itemid=123'
+						],
+						[
+						'type' => 'postback',
+						    'label' => 'Add to Cart',
+						    'data' => 'action=add&itemid=123'    
+						],
+						[
+						'type' => 'uri',
+						    'label' => 'View Details',
+						    'uri' => 'http://example.com/page/123'
+						]
+						]
+						
+								]
 								)
 								)
 							);
