@@ -27,6 +27,9 @@
 	  }
 	}
 	*/
+$sdk = new LINEBot($config, new GuzzleHTTPClient($client));
+$fromMid = $message->getFromMid();
+                    $user = $sdk->getUserProfile($fromMid);
 	$userId 	= $client->parseEvents()[0]['source']['userId'];
 	$replyToken = $client->parseEvents()[0]['replyToken'];
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
