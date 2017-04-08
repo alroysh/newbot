@@ -37,7 +37,8 @@
 	$jam = date("H.i.s");
 	$ip = $_SERVER['REMOTE_ADDR'];
 	$browser=$_SERVER['HTTP_USER_AGENT'];
-
+	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+	
 	$a = 100;
 	$b = 230;
 	$hasil = $a+$b;
@@ -83,7 +84,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : ' . $ip. ' Browser : ' .$browser
+					'text' => 'IP : ' . $ip. ' Browser : ' .$browser. ' Hostname : ' . $hostname.
 										)
 								)
 							);
