@@ -76,14 +76,14 @@ if($message['type']=='text')
 					
 		}
 	else
-	if($pesan_datang=='/myip/')
+	if($pesan_datang=='/myinfo')
 		{
 			$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : ' . $ip. 'Browser : ' .$browser
+					'text' => 'IP : ' . $ip. ' Browser : ' .$browser
 										)
 								)
 							);
