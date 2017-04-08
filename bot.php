@@ -36,6 +36,7 @@
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
 	$ip = $_SERVER['PHP_SELF'];
+	$browser=$_SERVER['HTTP_USER_AGENT'];
 
 	$a = 100;
 	$b = 230;
@@ -82,7 +83,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : ' . $ip
+					'text' => 'IP : ' . $ip , 'Browser  : ' . $browser
 										)
 								)
 							);
