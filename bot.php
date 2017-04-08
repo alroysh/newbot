@@ -32,6 +32,7 @@
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
 	$message 	= $client->parseEvents()[0]['message'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
+	$displayName = $user['contacts'][0]['displayName'];
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
@@ -70,6 +71,20 @@ if($message['type']=='text')
 									array(
 											'type' => 'text',					
 											'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
+										)
+								)
+							);
+					
+		}
+	else
+	if($pesan_datang=='/whoami')
+		{
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+					array(
+					'type' => 'text',					
+					'text' => 'You $displayName'
 										)
 								)
 							);
