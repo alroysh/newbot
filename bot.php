@@ -231,15 +231,15 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 						  'type' => 'template',	
-					   'altText' => 'Coba aja',
+					   'altText' => 'Movies',
 					   'template' =>[
 					  'type' => 'buttons',	
 					   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/236x/0c/cd/6a/0ccd6a5e74067bab2d43b4c3e7501fd1.jpg',
-						'title' => 'Menu',
-						'text' => 'Please Select',
+						'title' => 'Movies',
+						'text' => 'Tempat Download Film',
 						'actions' => [
 						[
-							'type' => 'postback',
+						    'type' => 'postback',
 						    'label' => 'Buy',
 						    'data' => 'action=buy&itemid=123'
 						],
@@ -251,7 +251,7 @@ if($message['type']=='text')
 						[
 						'type' => 'uri',
 						    'label' => 'View Details',
-						    'uri' => 'http://example.com/page/123'
+						    'uri' => 'http://lk21.org'
 						]
 						]
 						
