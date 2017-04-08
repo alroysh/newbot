@@ -84,7 +84,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'You $displayName'
+					'text' => 'You' . $displayName
 										)
 								)
 							);
@@ -116,7 +116,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'sticker',					
-											'packageId'=> '1',
+											'packageId'=> '2',
 											'stickerId'=> '2'
 										)
 								)
