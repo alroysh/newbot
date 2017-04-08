@@ -37,7 +37,6 @@
 	$jam = date("H.i.s");
 	$ip = $_SERVER['REMOTE_ADDR'];
 	$browser= $_SERVER['HTTP_USER_AGENT'];
-	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 	
 	$a = 100;
 	$b = 230;
