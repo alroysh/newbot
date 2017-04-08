@@ -32,6 +32,8 @@
 	$timestamp	= $client->parseEvents()[0]['timestamp'];
 	$message 	= $client->parseEvents()[0]['message'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
+	$fromMid = $message->getFromMid();
+        $user = $sdk->getUserProfile($fromMid);
 	$displayName = $user['contacts'][0]['displayName'];
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
