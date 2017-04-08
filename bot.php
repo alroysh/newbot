@@ -35,7 +35,7 @@
 	$profil = $client->profil($userId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
-	$ip = $_SERVER['REMOTE_ADDR'];
+	$ip = $_SERVER['PHP_SELF']
 
 	$a = 100;
 	$b = 230;
