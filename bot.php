@@ -33,6 +33,7 @@
 	$message 	= $client->parseEvents()[0]['message'];
 	$messageid 	= $client->parseEvents()[0]['message']['id'];
 	$profil = $client->profil($userId);
+ 	$pro=$client->groups($userId);
 	$pesan_datang = $message['text'];
 	$jam = date("H.i.s");
 	$ip = $_SERVER['REMOTE_ADDR'];
@@ -71,7 +72,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Link Foto Kamu : ' .$profil->pictureUrl.''
+											'text' => 'Link Foto Kamu : ' .$pro->pictureUrl.''
 										)
 								)
 							);
