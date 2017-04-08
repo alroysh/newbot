@@ -85,7 +85,7 @@ if($message['type']=='text')
 			'messages' => array(
 					array(
 					'type' => 'text',					
-					'text' => 'IP : ' . $ip. ',Browser : ' . $browser .'Hostname'. $hostname .$os
+					'text' => 'IP : ' . $ip. ', Browser : ' . $browser .', Hostname : '. $hostname .$os
 										)
 								)
 							);
@@ -117,8 +117,8 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'sticker',					
-											'packageId'=> '2',
-											'stickerId'=> '2'
+											'packageId'=> '10',
+											'stickerId'=> '1'
 										)
 								)
 							);
