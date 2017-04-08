@@ -56,7 +56,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Halo ' .$leave->displayName.''
+											'text' => 'Halo ' .$leave->mid.''
 										)
 								)
 							);
