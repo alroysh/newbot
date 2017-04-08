@@ -223,7 +223,7 @@ if($message['type']=='text')
 					
 		}
 				else
-		if($pesan_datang=='/coba')
+		if($pesan_datang('/coba','/movie'))
 		{
 			
 			$balas = array(
