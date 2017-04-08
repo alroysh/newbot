@@ -223,16 +223,17 @@ if($message['type']=='text')
 					
 		}
 		else
-		if($pesan_datang=='/coba')
+			if($pesan_datang=='/coba')
 		{
 			
 			$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
 			              array(
-					  'type' => 'template',	
-					   'altText' => 'Coba aja',
-										)
+					  'type' => 'uri',	
+					   'label' => 'View Details',
+						'uri' => 'http://example.com/page/123'			
+								)
 								)
 							);
 					
