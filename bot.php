@@ -234,7 +234,7 @@ if($message['type']=='text')
 					   'altText' => 'Coba aja',
 					   'template' =>[
 					  'type' => 'buttons',	
-					   'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
+					   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/236x/0c/cd/6a/0ccd6a5e74067bab2d43b4c3e7501fd1.jpg',
 						'title' => 'Menu',
 						'text' => 'Please Select',
 						'actions' => [
