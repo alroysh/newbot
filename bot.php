@@ -222,7 +222,7 @@ if($message['type']=='text')
 							);
 					
 		}
-			else
+				else
 		if($pesan_datang=='/coba')
 		{
 			
@@ -231,12 +231,12 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 						  'type' => 'template',	
-					   'altText' => 'Movie Download',
+					   'altText' => 'Coba aja',
 					   'template' =>[
 					  'type' => 'buttons',	
-					   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/236x/0c/cd/6a/0ccd6a5e74067bab2d43b4c3e7501fd1.jpg',
-						'title' => 'Tempat Download Film',
-						'text' => 'Tempat Download',
+					   'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
+						'title' => 'Menu',
+						'text' => 'Please Select',
 						'actions' => [
 						[
 							'type' => 'postback',
@@ -251,7 +251,7 @@ if($message['type']=='text')
 						[
 						'type' => 'uri',
 						    'label' => 'View Details',
-						    'uri' => 'lk21.org'
+						    'uri' => 'http://example.com/page/123'
 						]
 						]
 						
