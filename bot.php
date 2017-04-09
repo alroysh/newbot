@@ -333,15 +333,14 @@ if($message['type']=='text')
 					
 		}
 	else
-			if($pesan_datang=='@bye')
+			if($pesan_datang=='bye')
 		{
 			
 			$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
 			              array(
-					   'type' => 'leave',	
-					   'timestamp' => '1462629479859',
+					   'type' => 'leave',
 					  'source'[
 					  'type' => 'group',
 					  'groudId' => 'c21ec690688fad63c424b957d30223032'
