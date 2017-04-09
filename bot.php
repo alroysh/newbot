@@ -230,7 +230,36 @@ if($message['type']=='text')
 			'replyToken' => $replyToken,														
 			'messages' => array(
 			              array(
-						  'type' => 'template',	
+					   'type' => 'template',	
+					   'altText' => 'Movies',
+					   'template' =>[
+					  'type' => 'buttons',	
+					   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/236x/0c/cd/6a/0ccd6a5e74067bab2d43b4c3e7501fd1.jpg',
+						'title' => 'Movies',
+						'text' => 'Tempat Download Film',
+						'actions' => [
+						[
+						'type' => 'uri',
+						    'label' => $wita,
+						    'uri' => 'http://lk21.org'
+						]
+						]
+						
+								]
+								)
+								)
+							);
+					
+		}
+			else
+			if($pesan_datang=='/about')
+		{
+			
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+			              array(
+					   'type' => 'template',	
 					   'altText' => 'Movies',
 					   'template' =>[
 					  'type' => 'buttons',	
