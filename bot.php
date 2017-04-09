@@ -286,7 +286,7 @@ if($message['type']=='text')
 					
 		}
 else
-			if($pesan_datang=='Owner')
+			if($pesan_datang==='Owner')
 		{
 			
 			$balas = array(
