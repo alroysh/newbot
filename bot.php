@@ -304,7 +304,7 @@ if($message['type']=='text')
 						[
 						'type' => 'uri',
 						    'label' => 'Contact Owner',
-						    'uri' => 'http://line.me/ti/p/~velda_sitanggang'
+						    'uri' => 'http://line.me/ti/p/~velda_sitanggang',
 						],
 							'type' => 'uri',
 						    'label' => 'Contact Owner',
