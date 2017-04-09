@@ -264,13 +264,13 @@ if($message['type']=='text')
 					   'template' =>[
 					  'type' => 'buttons',	
 					   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/236x/0c/cd/6a/0ccd6a5e74067bab2d43b4c3e7501fd1.jpg',
-						'title' => 'Movies',
-						'text' => 'Tempat Download Film',
+						'title' => 'Bot Creator',
+						'text' => 'Created by alroysh_',
 						'actions' => [
 						[
 						'type' => 'uri',
-						    'label' => $wita,
-						    'uri' => 'http://lk21.org'
+						    'label' => 'Add Line',
+						    'uri' => 'http://line.me/ti/p/~alroysugiarto'
 						]
 						]
 						
