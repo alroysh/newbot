@@ -372,7 +372,7 @@ if($message['type']=='text')
 						'type' => 'message',
 						    'label' => 'about',
 						    'text' => '/about'
-						],
+						]
 						]
 						
 								]
