@@ -240,7 +240,7 @@ if($message['type']=='text')
 						'actions' => [
 						[
 						'type' => 'uri',
-						    'label' => $wita,
+						    'label' => 'Detalis',
 						    'uri' => 'http://lk21.org'
 						]
 						]
@@ -263,7 +263,7 @@ if($message['type']=='text')
 					   'altText' => 'Movies',
 					   'template' =>[
 					  'type' => 'buttons',	
-					   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/236x/0c/cd/6a/0ccd6a5e74067bab2d43b4c3e7501fd1.jpg',
+					   'thumbnailImageUrl' => 'http://oi66.tinypic.com/169155t.jpg',
 						'title' => 'Bot Creator',
 						'text' => 'Created by alroysh_',
 						'actions' => [
