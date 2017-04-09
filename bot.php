@@ -296,7 +296,9 @@ if($message['type']=='text')
 					   'type' => 'template',	
 					   'altText' => 'Creator Bot',
 					   'template' =>[
-					  'type' => 'buttons',	
+					  'type' => 'buttons',
+						'title' => 'Bot Creator',
+						'text' => 'Created by alroysh_',
 						'actions' => [
 						[
 						'type' => 'uri',
