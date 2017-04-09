@@ -317,6 +317,11 @@ if($message['type']=='text')
 						'type' => 'message',
 						    'label' => 'Pembayaran',
 						    'text' => 'pembayaran'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Deposit',
+						    'text' => 'deposit'
 						]
 						]
 						
