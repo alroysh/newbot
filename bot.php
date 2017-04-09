@@ -261,7 +261,7 @@ if($message['type']=='text')
 					   'type' => 'template',	
 					   'altText' => 'Creator Bot',
 					   'template' =>[
-					  'type' => 'buttons',	
+					  'type' => 'button',	
 					   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
 						'title' => 'Bot Creator',
 						'text' => 'Created by alroysh_',
