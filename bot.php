@@ -285,39 +285,7 @@ if($message['type']=='text')
 							);
 					
 		}
-	else
-			if($pesan_datang=='/owner')
-		{
-			
-			$balas = array(
-			'replyToken' => $replyToken,														
-			'messages' => array(
-			              array(
-					   'type' => 'template',	
-					   'altText' => 'Creator Bot',
-					   'template' =>[
-					  'type' => 'buttons',
-						'title' => 'Bot Creator',
-						'text' => 'Created by alroysh_',
-						'actions' => [
-						[
-						'type' => 'uri',
-						    'label' => 'Add Line',
-						    'uri' => 'http://line.me/ti/p/~alroysugiarto'
-						]
-						[
-						'type' => 'uri',
-						    'label' => 'Follow Instagram',
-						    'uri' => 'https://www.instagram.com/alroysh_/'
-						]	
-						]
-						
-								]
-								)
-								)
-							);
-					
-		}
+
 		else
 		if($pesan_datang=='Lokasi Bot')
 		{
