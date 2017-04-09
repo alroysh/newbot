@@ -301,6 +301,7 @@ if($message['type']=='text')
 						'text' => 'Velda Sitanggang',
 						'actions' => [
 						[
+						[
 						'type' => 'uri',
 						    'label' => 'Contact Owner',
 						    'uri' => 'http://line.me/ti/p/~velda_sitanggang'
