@@ -333,27 +333,21 @@ if($message['type']=='text')
 					
 		}
 	else
-			if($pesan_datang=='welcome')
+			if($pesan_datang=='@bye')
 		{
 			
 			$balas = array(
 			'replyToken' => $replyToken,														
 			'messages' => array(
 			              array(
-					   'type' => 'template',	
-					   'altText' => 'Welcome',
-					   'template' =>[
-					  'type' => 'buttons',
-						'text' => 'Hello'.$profil->displayName.',Selamat datang di grup!',
-						'actions' => [
-						[
-						'type' => 'message',
-						    'label' => 'Keyword',
-						    'text' => 'keyword'
-						]
-						]
+					   'type' => 'leave',	
+					   'timestamp' => '1462629479859',
+					  'source'[
+					  'type' => 'group',
+					  'groudId' => 'c21ec690688fad63c424b957d30223032'
+					  ]
 						
-								]
+								
 								)
 								)
 							);
