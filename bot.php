@@ -332,46 +332,6 @@ if($message['type']=='text')
 						'type' => 'message',
 						    'label' => 'Jadwal',
 						    'text' => 'jadwal'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Harga',
-						    'text' => 'Harga'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Owner',
-						    'text' => 'owner'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Testimoni',
-						    'text' => 'testimoni'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Rules Games',
-						    'text' => 'rules games'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Jadwal',
-						    'text' => 'jadwal'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Tupon Games',
-						    'text' => 'tupon games'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Tupon Deposit',
-						    'text' => 'tupon deposit'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'about',
-						    'text' => '/about'
 						]
 						]
 						
