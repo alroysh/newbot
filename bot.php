@@ -316,7 +316,33 @@ if($message['type']=='text')
 							);
 					
 		}
-	
+	else
+			if($pesan_datang=='welcome')
+		{
+			
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+			              array(
+					   'type' => 'template',	
+					   'altText' => 'Welcome',
+					   'template' =>[
+					  'type' => 'buttons',
+						'text' => 'Hello'.=> .$profil->displayName.',Selamat datang di grup!'
+						'actions' => [
+						[
+						'type' => 'message',
+						    'label' => 'Keyword',
+						    'text' => 'keyword'
+						]
+						]
+						
+								]
+								)
+								)
+							);
+					
+		}
 else
 			if($pesan_datang=='Owner')
 		{
