@@ -6,8 +6,8 @@
 	date_default_timezone_set('Asia/Jayapura');
 	$wit= date('H.i.s');
 	require_once('./line_class.php');
-	$channelAccessToken = 'bxcs67UsXL4dg6qSR4Nojg1djzE2QaP3RvedqZ2nY/2b+U6ypsmuoDr4j74SqKBQS2S8nFXRiOyfieRMLU2CEcqz570pODeTjUk8H4Y+AyhcO5qiEEj95HWSwIk23KR1AEIQjnUOw/JG+vdvTeVn1AdB04t89/1O/w1cDnyilFU=';
-	$channelSecret = '2ad35467614230c7a6dfe8e158e95988';
+	$channelAccessToken = 'dFJdjwwcnoQFsxIlttyNvO97ri1F2TDb2+8q5A2o3kvBe4lajr/mTs+LW7lXdo3Hj/PnuMCE5sj8aAwE2/fF+dKEKP53lsAX57rFGL6J/w0HtouhEu0bg4fgujVmVr7tsQQ1fxJPbiDsC28K2UP6QwdB04t89/1O/w1cDnyilFU=';
+	$channelSecret = 'a194f3186c23bb850f1bb7b565d4c998';
 	$client = new LINEBotTiny($channelAccessToken, $channelSecret);
 	//var_dump($client->parseEvents());
 	//$_SESSION['userId']=$client->parseEvents()[0]['source']['userId'];
