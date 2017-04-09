@@ -328,7 +328,7 @@ if($message['type']=='text')
 					   'altText' => 'Welcome',
 					   'template' =>[
 					  'type' => 'buttons',
-						'text' => 'Hello,Selamat datang di grup!'
+						'text' => 'Hello,Selamat datang di grup!',
 						'actions' => [
 						[
 						'type' => 'message',
