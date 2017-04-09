@@ -285,7 +285,7 @@ if($message['type']=='text')
 					
 		}
 	else
-			if($pesan_datang=='/own')
+			if($pesan_datang=='keyword')
 		{
 			
 			$balas = array(
@@ -300,13 +300,23 @@ if($message['type']=='text')
 						'actions' => [
 						[
 						'type' => 'message',
-						    'label' => 'Tanggal',
-						    'text' => '/tanggal'
+						    'label' => 'Welcome',
+						    'text' => 'welcome'
 						],
 						[
 						'type' => 'message',
-						    'label' => 'Keyword',
-						    'text' => 'keyword'
+						    'label' => 'Rules',
+						    'text' => 'rules'
+						],
+						[
+						'type' => 'message',
+						    'label' => 'Rules',
+						    'text' => 'rules'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Pembayaran',
+						    'text' => 'pembayaran'
 						]
 						]
 						
