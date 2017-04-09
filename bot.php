@@ -340,12 +340,8 @@ if($message['type']=='text')
 			'replyToken' => $replyToken,														
 			'messages' => array(
 			              array(
-					   'type' => 'leave',
-					  'source'[
-					  'type' => 'group',
-					  'groudId' => 'c21ec690688fad63c424b957d30223032'
-					  ]
-						
+					   'type' => 'message2',
+					   'text' => 'message2'	
 								
 								)
 								)
