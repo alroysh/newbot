@@ -302,13 +302,8 @@ else
 						'actions' => [
 						[
 						'type' => 'uri',
-						    'label' => 'Add Line',
+						    'label' => 'Contact Line',
 						    'uri' => 'http://line.me/ti/p/~velda_sitanggang'
-						],
-						[
-						'type' => 'uri',
-						    'label' => 'Follow Instagram',
-						    'uri' => 'https://www.instagram.com/alroysh_/'
 						]	
 						]
 						
