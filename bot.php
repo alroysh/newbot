@@ -296,18 +296,23 @@ if($message['type']=='text')
 					   'altText' => 'this is a confirm template',
 					   'template' =>[
 					  'type' => 'confirm',
-						'text' => 'Are you sure?',
+						'text' => 'Keyword',
 						'actions' => [
 						[
 						'type' => 'message',
-						    'label' => 'Yes',
+						    'label' => 'Tanggal',
 						    'text' => '/tanggal'
 						],
 						[
 						'type' => 'message',
-						    'label' => 'No',
+						    'label' => 'Keyword',
+						    'text' => 'keyword'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Jam',
 						    'text' => '/jam'
-						]	
+						]
 						]
 						
 								]
