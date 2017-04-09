@@ -294,16 +294,16 @@ else
 			'messages' => array(
 			              array(
 					   'type' => 'template',	
-					   'altText' => 'Creator Bot',
+					   'altText' => 'Owner Group',
 					   'template' =>[
 					  'type' => 'buttons',	
-						'title' => 'Bot Creator',
-						'text' => 'Created by alroysh_',
+						'title' => 'Owner Group',
+						'text' => 'Velda Sitanggang',
 						'actions' => [
 						[
 						'type' => 'uri',
 						    'label' => 'Add Line',
-						    'uri' => 'http://line.me/ti/p/~alroysugiarto'
+						    'uri' => 'http://line.me/ti/p/~velda_sitanggang'
 						],
 						[
 						'type' => 'uri',
