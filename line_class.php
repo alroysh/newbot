@@ -85,7 +85,7 @@ class LINEBotTiny
     public function profil($userId)
     {
       
-		return json_decode(exec_get('https://api.line.me/v2/profile'.$userId,$this->channelAccessToken));
+		return json_decode(exec_get('GET https://api.line.me/v2/bot/profile/{userId}'.$userId,$this->channelAccessToken));
        
     }
     private function sign($body)
