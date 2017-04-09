@@ -260,10 +260,10 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					   'type' => 'template',	
-					   'altText' => 'Movies',
+					   'altText' => 'Creator Bot',
 					   'template' =>[
 					  'type' => 'buttons',	
-					   'thumbnailImageUrl' => 'http://oi66.tinypic.com/169155t.jpg',
+					   'thumbnailImageUrl' => 'https://images.tenplay.com.au/~/media/TV%20Shows/Movies%20Hub/Movies_Logo_500x281.jpg',
 						'title' => 'Bot Creator',
 						'text' => 'Created by alroysh_',
 						'actions' => [
