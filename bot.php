@@ -38,7 +38,6 @@
 	$ip = $_SERVER['REMOTE_ADDR'];
 	$browser= $_SERVER['HTTP_USER_AGENT'];
 	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-
 	$a = 100;
 	$b = 230;
 	$hasil = $a+$b;
@@ -286,7 +285,7 @@ if($message['type']=='text')
 					
 		}
 else
-			if($pesan_datang==='Owner')
+			if($pesan_datang=='coba'||'Coba')
 		{
 			
 			$balas = array(
