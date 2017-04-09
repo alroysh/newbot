@@ -284,6 +284,33 @@ if($message['type']=='text')
 							);
 					
 		}
+	else
+			if($pesan_datang=='Oner')
+		{
+			
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+			              array(
+					   'type' => 'template',	
+					   'altText' => 'Owner Group',
+					   'template' =>[
+					  'type' => 'confirm',	
+						'text' => 'are you sure?',
+						'actions' => [
+						[
+						'type' => 'message',
+						    'label' => 'yes',
+						    'text' => 'yes'
+						]	
+						]
+						
+								]
+								)
+								)
+							);
+					
+		}
 else
 			if($pesan_datang=='Owner')
 		{
