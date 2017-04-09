@@ -295,7 +295,7 @@ if($message['type']=='text')
 					   'type' => 'template',	
 					   'altText' => 'this is a confirm template',
 					   'template' =>[
-					  'type' => 'confirm',
+					  'type' => 'buttons',
 						'text' => 'Keyword',
 						'actions' => [
 						[
