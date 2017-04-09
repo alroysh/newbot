@@ -294,21 +294,22 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					   'type' => 'template',	
-					   'altText' => 'Owner Group',
+					   'altText' => 'Creator Bot',
 					   'template' =>[
 					  'type' => 'buttons',
-						'title' => 'Owner Group',
-						'text' => 'Velda Sitanggang',
+						'title' => 'Bot Creator',
+						'text' => 'Created by alroysh_',
 						'actions' => [
 						[
+						'type' => 'uri',
+						    'label' => 'Add Line',
+						    'uri' => 'http://line.me/ti/p/~alroysugiarto'
+						]
 						[
 						'type' => 'uri',
-						    'label' => 'Contact Owner',
-						    'uri' => 'http://line.me/ti/p/~velda_sitanggang',
-						],
-							'type' => 'uri',
-						    'label' => 'Contact Owner',
-						    'uri' => 'http://line.me/ti/p/~velda_sitanggang'
+						    'label' => 'Follow Instagram',
+						    'uri' => 'https://www.instagram.com/alroysh_/'
+						]	
 						]
 						
 								]
