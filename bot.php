@@ -271,7 +271,12 @@ if($message['type']=='text')
 						'type' => 'uri',
 						    'label' => 'Add Line',
 						    'uri' => 'http://line.me/ti/p/~alroysugiarto'
-						]
+						],
+						[
+						'type' => 'uri',
+						    'label' => 'Follow Instagram',
+						    'uri' => 'https://www.instagram.com/alroysh_/'
+						]	
 						]
 						
 								]
