@@ -301,12 +301,12 @@ if($message['type']=='text')
 						[
 						'type' => 'message',
 						    'label' => 'Yes',
-						    'text' => 'yes'
+						    'text' => '/tanggal'
 						],
 						[
 						'type' => 'message',
 						    'label' => 'No',
-						    'text' => 'no'
+						    'text' => '/jam'
 						]	
 						]
 						
