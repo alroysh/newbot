@@ -317,21 +317,6 @@ if($message['type']=='text')
 						'type' => 'message',
 						    'label' => 'Pembayaran',
 						    'text' => 'pembayaran'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Deposit',
-						    'text' => 'deposit'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Invite Member',
-						    'text' => 'invite member'
-						],
-							[
-						'type' => 'message',
-						    'label' => 'Jadwal',
-						    'text' => 'jadwal'
 						]
 						]
 						
