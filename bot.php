@@ -317,11 +317,48 @@ if($message['type']=='text')
 						'type' => 'message',
 						    'label' => 'Pembayaran',
 						    'text' => 'pembayaran'
+						]
+						]
+						
+								]
+								)
+								)
+							);
+					
+		}
+	else
+			if($pesan_datang=='makanbang')
+		{
+			
+			$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+			              array(
+					   'type' => 'template',	
+					   'altText' => 'this is a confirm template',
+					   'template' =>[
+					  'type' => 'buttons',
+						'text' => 'Keyword',
+						'actions' => [
+						[
+						'type' => 'message',
+						    'label' => 'Welcome',
+						    'text' => 'welcome'
+						],
+						[
+						'type' => 'message',
+						    'label' => 'Rules',
+						    'text' => 'rules'
+						],
+						[
+						'type' => 'message',
+						    'label' => 'Format Order',
+						    'text' => 'format order'
 						],
 							[
 						'type' => 'message',
-						    'label' => 'Deposit',
-						    'text' => 'deposit'
+						    'label' => 'Pembayaran',
+						    'text' => 'pembayaran'
 						]
 						]
 						
