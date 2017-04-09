@@ -263,7 +263,7 @@ if($message['type']=='text')
 					   'altText' => 'Creator Bot',
 					   'template' =>[
 					  'type' => 'buttons',	
-					   'thumbnailImageUrl' => 'https://images.tenplay.com.au/~/media/TV%20Shows/Movies%20Hub/Movies_Logo_500x281.jpg',
+					   'thumbnailImageUrl' => 'http://dl.profile.line-cdn.net/0hXXrFdf6TB3dPPyn6RWZ4IHN6CRo4EQE_NwpIQW84DkI3X0Eic1hIEGlqDRBmDUJyI1pMGWpqDEc3',
 						'title' => 'Bot Creator',
 						'text' => 'Created by alroysh_',
 						'actions' => [
