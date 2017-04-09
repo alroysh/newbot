@@ -286,7 +286,7 @@ if($message['type']=='text')
 					
 		}
 	else
-			if($pesan_datang=='Owner')
+			if($pesan_datang=='/owner')
 		{
 			
 			$balas = array(
@@ -305,7 +305,10 @@ if($message['type']=='text')
 						'type' => 'uri',
 						    'label' => 'Contact Owner',
 						    'uri' => 'http://line.me/ti/p/~velda_sitanggang'
-						]	
+						],
+							'type' => 'uri',
+						    'label' => 'Contact Owner',
+						    'uri' => 'http://line.me/ti/p/~velda_sitanggang'
 						]
 						
 								]
