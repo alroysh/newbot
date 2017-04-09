@@ -307,11 +307,6 @@ if($message['type']=='text')
 						'type' => 'message',
 						    'label' => 'Keyword',
 						    'text' => 'keyword'
-						],
-						[
-						'type' => 'uri',
-						    'label' => 'Keyword',
-						    'text' => 'keyword'
 						]
 						]
 						
