@@ -251,7 +251,7 @@ if($message['type']=='text')
 					
 		}
 			else
-			if($pesan_datang=='/about')
+			if($pesan_datang=='about'||'About')
 		{
 			
 			$balas = array(
@@ -285,7 +285,7 @@ if($message['type']=='text')
 					
 		}
 else
-			if($pesan_datang=strtolower($_POST['input']))
+			if($pesan_datang=='owner'||'Owner')
 		{
 			
 			$balas = array(
