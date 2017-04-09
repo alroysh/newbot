@@ -310,14 +310,69 @@ if($message['type']=='text')
 						],
 						[
 						'type' => 'message',
-						    'label' => 'Rules',
-						    'text' => 'rules'
+						    'label' => 'Format Order',
+						    'text' => 'format order'
 						],
 							[
 						'type' => 'message',
 						    'label' => 'Pembayaran',
 						    'text' => 'pembayaran'
-						]
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Deposit',
+						    'text' => 'deposit'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Invite Member',
+						    'text' => 'invite member'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Jadwal',
+						    'text' => 'jadwal'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Harga',
+						    'text' => 'Harga'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Owner',
+						    'text' => 'owner'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Testimoni',
+						    'text' => 'testimoni'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Rules Games',
+						    'text' => 'rules games'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Jadwal',
+						    'text' => 'jadwal'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Tupon Games',
+						    'text' => 'tupon games'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'Tupon Deposit',
+						    'text' => 'tupon deposit'
+						],
+							[
+						'type' => 'message',
+						    'label' => 'about',
+						    'text' => '/about'
+						],
 						]
 						
 								]
