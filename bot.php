@@ -327,7 +327,7 @@ if($message['type']=='text')
 					
 		}
 	else
-			if($pesan_datang=='makanbang')
+			if($pesan_datang=='keyword')
 		{
 			
 			$balas = array(
@@ -338,7 +338,7 @@ if($message['type']=='text')
 					   'altText' => 'this is a confirm template',
 					   'template' =>[
 					  'type' => 'buttons',
-						'text' => 'Keyword',
+						'text' => 'Keyword 2',
 						'actions' => [
 						[
 						'type' => 'message',
