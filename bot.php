@@ -307,6 +307,11 @@ if($message['type']=='text')
 						'type' => 'message',
 						    'label' => 'Keyword',
 						    'text' => 'keyword'
+						],
+						[
+						'type' => 'message',
+						    'label' => 'Keyword',
+						    'text' => 'keyword'
 						]
 						]
 						
