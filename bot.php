@@ -285,7 +285,7 @@ if($message['type']=='text')
 					
 		}
 	else
-			if($pesan_datang=='Oner')
+			if($pesan_datang=='/own')
 		{
 			
 			$balas = array(
@@ -293,15 +293,20 @@ if($message['type']=='text')
 			'messages' => array(
 			              array(
 					   'type' => 'template',	
-					   'altText' => 'Owner Group',
+					   'altText' => 'this is a confirm template',
 					   'template' =>[
-					  'type' => 'confirm',	
-						'text' => 'are you sure?',
+					  'type' => 'confirm',
+						'text' => 'Are you sure?',
 						'actions' => [
 						[
 						'type' => 'message',
-						    'label' => 'yes',
+						    'label' => 'Yes',
 						    'text' => 'yes'
+						],
+						[
+						'type' => 'message',
+						    'label' => 'No',
+						    'text' => 'no'
 						]	
 						]
 						
@@ -311,6 +316,7 @@ if($message['type']=='text')
 							);
 					
 		}
+	
 else
 			if($pesan_datang=='Owner')
 		{
