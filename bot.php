@@ -99,7 +99,7 @@ if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => 'Status Message Kamu : ' .$profil->statusMessage.''
+											'text' => 'Status Message Kamu : ' .$profil->getDisplayName().''
 										)
 								)
 							);
