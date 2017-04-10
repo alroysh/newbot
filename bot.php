@@ -251,7 +251,7 @@ if($message['type']=='text')
 					
 		}
 			else
-			if($pesan_datang=='/about')
+			if($pesan_datang=='/abousst')
 		{
 			
 			$balas = array(
@@ -332,22 +332,7 @@ if($message['type']=='text')
 							);
 					
 		}
-	else
-			if($pesan_datang=='bye')
-		{
-			
-			$balas = array(
-			'replyToken' => $replyToken,														
-			'messages' => array(
-			              array(
-					   'type' => 'message2',
-					   'text' => 'message2'	
-								
-								)
-								)
-							);
-					
-		}
+	
 else
 			if($pesan_datang=='Owner')
 		{
